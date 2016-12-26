@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="seamless.css" rel="stylesheet" />
+	</head>
+	<body>
+	<div style="width:500px;">
+		<div class="seamless_wrap">
+			<span class="seamless_prev"></span>
+			<span class="seamless_next"></span>
+			<ul class="seamless_list">
+				<li>
+					<img src="css.png" />
+				</li>
+				<li>
+					<img src="css.png" />
+				</li>
+				<li>
+					<img src="css.png" />
+				</li>
+				<li>
+					<img src="css.png" />
+				</li>
+				<li>
+					<img src="css.png" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.seamless.js"></script>
+	<script>
+		$(function(){
+			$(".seamless_list").seamless({"speed":2,"direction":"left"});
+		})
+	</script>
+	</body>
+</html>
